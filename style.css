@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    
+}
+
+:root{
+    --blue-low: rgb(24, 162, 226); 
+    --white: white; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Sedgwick+Ave+Display&display=swap');
+
+
+.head{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    background: var(--blue-low);
+}
+.head-logo{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: var(--white);
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+a{
+    color: var(--white);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+a:hover{
+    color: var(--blue-low);
+}
+li{
+    padding: 5px;
+    margin-left: 10px;
+}
+li:hover{
+    background: var(--white);
+    transform: scale(1.1);
+    transition: .5s;
+    border-radius: 15px;
+    
+}
+.hamburger{
+    display: none;
+    margin: auto 0;
+    cursor: pointer;
+}
+.hamburger div{
+    width: 35px;
+    height: 3px;
+    background: var(--white);
+    margin:  6px 0;
+    transition: 0.4s;
+}
+.open #bar1{
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open #bar2{
+    opacity: 0;
+}
+.open #bar3{
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+
+/* navbar responsive*/
+.open .navbar-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+}
+
+.navbar-mobile{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background: var(--blue-low);
+    
+}
+.navbar-mobile li{
+    margin-bottom: 10px;
+}
+
+
+
+
+@media screen and (max-width:720px) {
+    header nav {
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .main{
+        width: 400px;
+        height: 100%;        
+        margin: 0 auto;
+    }
+    .seccionUno{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+    .container{
+        width: 80%;
+        height: 250px;       
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 35px;
+    }
+    img{
+        margin-top: 35px;
+        margin-left: 50px;
+        border-radius: 100px 0 100px 0;
+        border: 3px var(--blue-low) solid;
+    }
+    .sobremi{
+        width: 80%;
+        height: 280px;       
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 20px;
+        background: var(--blue-low);
+        text-align: center;
+        border-radius: 100px 0 100px 0;
+        padding: 5px;
+        color: var(--white);
+    }
+    .sobremiP{
+        font-size: 15.5px;
+        margin-top: 15px;
+        text-align: center;
+        
+    }
+    .Servicios{
+        width: 80%;
+        height: 280px;       
+        margin: 0 auto;
+    }
+    .servicioh2{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .card{
+        width: 250px;
+        height: 100px;
+        border: 2px var(--blue-low) solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-left: 35px;
+        border-radius: 100px 0 100px 0;
+    }
+    .card:hover{
+        background: var(--blue-low);
+        border: 2px black solid;
+        color: var(--white);
+    }
+    h3{
+        font-size: 15.8px;
+    }
+    p{
+        font-size: 12.8px;
+    }
+    .ubicacion{
+        width: 80%;
+        height: 120px;        
+        margin: 0 auto;
+    }
+    iframe{
+        height: 45px;
+    }
+    .contacto{
+        width: 80%;
+        height: 55px;
+        margin: 0 auto;        
+        margin-bottom: 20px;
+    }
+    .boton{
+        width: 50%;
+        height: 30px;
+        background: green;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 5px;
+        border-radius: 20px;
+        
+        cursor: pointer;
+    }
+    a{
+        font-size: 8px;
+    }
+    footer{
+        text-align: center;
+    }
+    .footerP{
+        color: var(--blue-low);
+        font-weight:bold;
+    }
+    }
+
+    
+    
+
+
+
+
+
+
